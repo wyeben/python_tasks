@@ -10,7 +10,7 @@ class Point:
         return self.__x
 
     @x.setter
-    def x(self, value):
+    def x(self, value): 
         if value < 0:
             raise ValueError("x value cannot be negative")
         self.__x = value
