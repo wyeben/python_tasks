@@ -1,3 +1,6 @@
+import random
+
+
 class Account:
     def __init__(self, account_number, pin):
         self.last_name = None
@@ -5,6 +8,10 @@ class Account:
         self.account_number = account_number
         self.balance = 0.0
         self.pin = 1
+
+    @staticmethod
+    def generate_account_number():
+        return ''.join([str(random.randint(0, 9)) for _ in range(10)])
 
     def get_balance(self):
         return self.balance

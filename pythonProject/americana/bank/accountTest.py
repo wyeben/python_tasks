@@ -1,6 +1,6 @@
 import unittest
 
-from americana.bank.Account import Account
+from americana.bank.account import Account
 
 
 class TestAccount(unittest.TestCase):

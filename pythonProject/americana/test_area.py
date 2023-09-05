@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from americana.bank import area
+from americana import area
 
 
 class Test(TestCase):
