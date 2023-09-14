@@ -1,3 +1,4 @@
+
 import unittest
 from datetime import datetime
 
@@ -6,7 +7,6 @@ from americana.diary_with_colors import Diary, User, Entry
 
 class TestDiary(unittest.TestCase):
     def setUp(self):
-
         self.diary = Diary()
         self.user = User("Benson", "password")
         self.diary.user_credentials.append(self.user)
@@ -50,6 +50,7 @@ class TestDiary(unittest.TestCase):
     def test_unlock_diary(self):
         self.diary.unlock_diary("password")
         self.assertFalse(self.diary.is_diary_locked())
+
 
 if __name__ == "__main__":
     unittest.main()

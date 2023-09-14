@@ -392,9 +392,7 @@ class DiaryApp:
                 button.configure(bg="SystemButtonFace")
 
     def generate_random_color(self):
-        return "#{:02x}{:02x}{:02x}".format(random.randint(0, 255),
-                                            random.randint(0, 255),
-                                            random.randint(0, 255))
+        return "#{:02x}{:02x}{:02x}".format(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 
     def save_and_exit(self):
         if self.logged_in:
