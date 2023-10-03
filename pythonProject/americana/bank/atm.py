@@ -16,7 +16,7 @@ def main():
         if choice == 1:
 
             if choice == 1:
-                pin = int(input("Enter PIN: "))
+                pin = input("Enter PIN: ")
                 account_number = Account.generate_account_number()
                 new_account = Account(account_number, pin)
                 first_name = input("Enter first name: ")
@@ -37,7 +37,7 @@ def main():
         elif choice == 3:
             account_number = input("Enter account number: ")
             if account_number in accounts:
-                pin = int(input("Enter PIN: "))
+                pin = input("Enter PIN: ")
                 amount = float(input("Enter withdrawal amount: "))
                 if accounts[account_number].withdraw(amount, pin):
                     print("Withdrawal successful!")

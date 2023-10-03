@@ -7,7 +7,7 @@ class Account:
         self.first_name = None
         self.account_number = account_number
         self.balance = 0.0
-        self.pin = 1
+        self.pin = pin
 
     @staticmethod
     def generate_account_number():
@@ -21,7 +21,7 @@ class Account:
             self.balance += amount
 
     def withdraw(self, amount, pin):
-        if pin == 1 and self.balance >= amount:
+        if self.pin == pin and self.balance >= amount:
             self.balance -= amount
             return True
         return False
