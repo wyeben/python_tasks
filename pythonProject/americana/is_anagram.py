@@ -1,6 +1,6 @@
 def is_anagram(s, t):
     if len(s) != len(t):
-        return 'please words length is not the same'
+        return 'please words '
 
     s = s.lower()
     t = t.lower()
@@ -22,4 +22,9 @@ def is_anagram(s, t):
     return True
 
 
-
+word1 = "anagram"
+word2 = "aganram"
+word3 = 'chair'
+word4 = 'cheer'
+print(is_anagram(word1, word2))
+print(is_anagram(word3, word4))
