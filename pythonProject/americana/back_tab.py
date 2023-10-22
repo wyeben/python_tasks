@@ -1,15 +1,18 @@
 def can_transform(word1, word2):
-    while '##' in word1:
-        word1 = word1.replace('##', '')
+    def process_word(word):
+        result = []
+        for char in word:
+            if char == '#':
+                if result:
+                    result.pop()
+            else:
+                result.append(char)
+        return ''.join(result)
 
-    word1 = word1.replace('#', '')
-    word2 = word2.replace('#', '')
+    words1 = process_word(word1)
+    words2 = process_word(word2)
 
-    return word1 == word2
+    return words1 == words2
 
 
-word1 = 'a#b#d#pqrs#'
-word2 = 'ac#d##pqr'
 
-result = can_transform(word1, word2)
-print(result)
