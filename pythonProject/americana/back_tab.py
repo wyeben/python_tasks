@@ -15,4 +15,8 @@ def can_transform(word1, word2):
     return words1 == words2
 
 
+wordz1 = 'a#b#d#pqrs#'
+wordz2 = 'ac#d##pqr'
 
+result = can_transform(wordz1, wordz2)
+print(result)
