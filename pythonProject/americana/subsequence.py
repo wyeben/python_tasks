@@ -12,12 +12,12 @@ def subsequence(word1, word2):
 def subsequence1(y, t):
     count1 = 0
     count2 = 0
-    for i in y:
-        for r in t:
+    for i in y.__len__():
+        for r in t.__len__():
             if y[i] == t[r]:
                 count1 += 1
             count2 += 1
-    return count1 == y
+    return count1 == y.__len__()
 
 
 words1 = 'bce'
@@ -26,6 +26,6 @@ words3 = 'met'
 words4 = 'stream'
 words5 = 'stem'
 words6 = 'stream'
-print(subsequence(words1, words2))
-print(subsequence(words3, words4))
-print(subsequence(words5, words6))
+print(subsequence1(words1, words2))
+print(subsequence1(words3, words4))
+print(subsequence1(words5, words6))
