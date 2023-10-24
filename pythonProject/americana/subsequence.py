@@ -9,7 +9,7 @@ def subsequence(word1, word2):
     return i == len(word1)
 
 
-words1 = 'cde'
+words1 = 'bce'
 words2 = 'abcde'
 words3 = 'met'
 words4 = 'stream'
