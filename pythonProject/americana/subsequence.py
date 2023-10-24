@@ -12,8 +12,10 @@ def subsequence(word1, word2):
 def subsequence1(y, t):
     count1 = 0
     count2 = 0
-    for i in y and r in t:
-        if
+    for i in y:
+        if y[i] == t[r]:
+            i += 1
+        r += 1
 
 
 words1 = 'bce'
