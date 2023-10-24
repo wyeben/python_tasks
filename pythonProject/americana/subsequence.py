@@ -8,6 +8,9 @@ def subsequence(word1, word2):
 
     return i == len(word1)
 
+def subsequence1(y, t):
+
+
 
 words1 = 'bce'
 words2 = 'abcde'
