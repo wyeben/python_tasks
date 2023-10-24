@@ -1,13 +1,15 @@
 def subsequence(word1, word2):
-    for char in word1:
-        for letter in word2:
-            if char == letter:
-                return True
-            else:
-                return False
+    i, j = 0, 0
+
+    while i < len(word1) and j < len(word2):
+        if word1[i] == word2[j]:
+            i += 1
+        j += 1
+
+    return i == len(word1)
 
 
-words1 = 'bcd'
+words1 = 'cde'
 words2 = 'abcde'
 words3 = 'met'
 words4 = 'stream'
