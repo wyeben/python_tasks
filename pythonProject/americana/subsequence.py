@@ -15,8 +15,9 @@ def subsequence1(y, t):
     for i in y:
         for r in t:
             if y[i] == t[r]:
-                i += 1
-            r += 1
+                count1 += 1
+            count2 += 1
+    return count1 == y
 
 
 words1 = 'bce'
