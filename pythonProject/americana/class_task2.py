@@ -1,19 +1,13 @@
-def subsequence(word1):
-    for r in word1:
-        if r.startswith('a') and r.endswith('b'):
-            return True
-    return False
-
 
 def subsequence1(word1):
     i = 0
 
-    while i in word1:
+    while i < len(word1):
         if word1[i] == word1[i]:
             i += 1
         i += 1
 
-    return i == word1
+    return i == len(word1)
 
 
 input1 = "abab"
