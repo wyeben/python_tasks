@@ -1,5 +1,5 @@
 
-def subsequence1(word1):
+def check_pattern(word1):
     i = 0
 
     while i < len(word1):
@@ -13,6 +13,6 @@ def subsequence1(word1):
 input1 = "abab"
 input2 = "aba"
 input3 = "abcabcabc"
-print(subsequence1(input1))
-print(subsequence1(input2))
-print(subsequence1(input3))
+print(check_pattern(input1))
+print(check_pattern(input2))
+print(check_pattern(input3))
