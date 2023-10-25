@@ -6,7 +6,8 @@ def check_pattern(word1):
     while i < len(word1):
         if word1[i] == pattern:
             i += 1
-        i += 1
+        else:
+
 
     return i == len(word1)
 
