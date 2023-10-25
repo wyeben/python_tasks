@@ -1,6 +1,6 @@
 
 def check_pattern(word1):
-    i = 0
+    i = 1
 
     while i < len(word1):
         if word1[i] == word1[i]:
