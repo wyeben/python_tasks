@@ -5,9 +5,20 @@ def subsequence(word1):
     return False
 
 
+def subsequence1(word1):
+    i = 0
+
+    while i in word1:
+        if word1[i] == word1[i]:
+            i += 1
+        i += 1
+
+    return i == word1
+
+
 input1 = "abab"
 input2 = "aba"
 input3 = "abcabcabc"
-print(subsequence(input1))
-print(subsequence(input2))
-print(subsequence(input3))
+print(subsequence1(input1))
+print(subsequence1(input2))
+print(subsequence1(input3))
