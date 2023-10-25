@@ -10,13 +10,14 @@ def subsequence(word1, word2):
 
 
 def subsequence1(y, t):
-    count1 = 0
-    count2 = 0
-    for i in range(len(y)) and r in range(len(t)):
-        if y[i] == t[r]:
-            count1 += 1
-        count2 += 1
-    return count1 == y
+    i = 0
+    r = 0
+    for i in range(len(y)):
+        for r in range(len(t)):
+            if y[i] == t[r]:
+                i += 1
+            r += 1
+    return i == len(y)
 
 
 words1 = 'bce'
