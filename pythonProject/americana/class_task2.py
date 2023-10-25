@@ -7,7 +7,7 @@ def check_pattern(word1):
         if word1[i] == pattern:
             i += 1
         else:
-
+            return False
 
     return i == len(word1)
 
