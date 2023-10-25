@@ -12,7 +12,7 @@ def subsequence(word1, word2):
 def subsequence1(y, t):
     count1 = 0
     count2 = 0
-    for i in y:
+    for i in range(len()):
         for r in t:
             if y[i] == t[r]:
                 count1 += 1
