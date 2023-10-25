@@ -9,7 +9,7 @@ def check_pattern(word1):
         else:
             return False
 
-    return i == len(word1)
+    return True
 
 
 input1 = "abab"
