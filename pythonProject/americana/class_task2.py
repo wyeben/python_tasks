@@ -1,5 +1,6 @@
 
 def check_pattern(word1):
+    pattern = word1[0]
     i = 1
 
     while i < len(word1):
