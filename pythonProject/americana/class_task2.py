@@ -1,4 +1,3 @@
-
 def check_pattern(word1):
     pattern = ''
     i = 0
@@ -7,10 +6,8 @@ def check_pattern(word1):
         if word1 == pattern * (len(word1) // len(pattern)):
             return True
         i += 1
-        else:
-            return False
 
-    return True
+    return False
 
 
 input1 = "abab"
