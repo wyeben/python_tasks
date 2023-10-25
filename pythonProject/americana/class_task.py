@@ -1,7 +1,7 @@
 def find(y):
     max1 = 0
-    for i, r in range(y):
-        if y[i] > y[r]:
+    for i in range(y):
+        if y[i] > max1:
             max1 += y
     return max1
 
