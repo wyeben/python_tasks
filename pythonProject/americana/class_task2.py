@@ -1,10 +1,10 @@
 
 def check_pattern(word1):
-    pattern = word1[0]
-    i = 1
+    pattern = ''
+    i = 0
 
     while i < len(word1):
-        if word1[i] == pattern:
+        if word1 == pattern:
             i += 1
         else:
             return False
