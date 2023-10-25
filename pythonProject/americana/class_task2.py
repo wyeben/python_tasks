@@ -5,7 +5,8 @@ def check_pattern(word1):
 
     while i < len(word1):
         if word1 == pattern * (len(word1) // len(pattern)):
-            i += 1
+            return True
+        i += 1
         else:
             return False
 
