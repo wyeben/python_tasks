@@ -15,6 +15,7 @@ input1 = "abab"
 input2 = "aba"
 input3 = "abcabcabc"
 print(check_pattern(input1))
+
 print(check_pattern(input2))
 print(check_pattern(input3))
 
