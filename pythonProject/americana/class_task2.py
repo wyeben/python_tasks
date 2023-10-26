@@ -4,10 +4,10 @@ def check_pattern(word1):
 
     while i < len(word1):
         pattern += word1[i]
-        if word1 == pattern * (len(word1) // len(pattern)):
+        repeated_pattern = pattern * (len(word1) // len(pattern))
+        if repeated_pattern == word1:
             return True
         i += 1
-
     return False
 
 
