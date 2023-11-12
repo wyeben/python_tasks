@@ -5,4 +5,5 @@ def numbers(number):
     return total
 
 
+collect = int(input('enter a number or (s) to stop'))
 
