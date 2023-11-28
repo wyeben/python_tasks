@@ -1,7 +1,8 @@
 def reverse_vowel(ip):
     vowels = "aeiouAEIOU"
     ip = list(ip)
-    i, j = 0, len(ip) - 1
+    i = 0
+    j = len(ip) - 1
 
     while i < j:
         if ip[i] in vowels and ip[j] in vowels:
