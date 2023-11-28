@@ -16,7 +16,7 @@ def reverse_vowel(ip):
     return ''.join(ip)
 
 
-giving1 = "hEllo"
+giving1 = "hello"
 giving2 = "leetcode"
 print(reverse_vowel(giving1))
 print(reverse_vowel(giving2))
